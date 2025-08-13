@@ -10,7 +10,8 @@
 #include <fstream>
 using namespace std;
 
-class HospitalManager {
+class HospitalManager 
+{
 private:
     vector<Patient> patients;
     vector<Doctor> doctors;
@@ -47,7 +48,7 @@ public:
     void displayPatientAppointments(string patientId) const;
     void displayDoctorAppointments(string doctorId) const;
 
-    // File Operations
+    // File 
     void saveAllData();
     void loadAllData();
     bool savePatients();

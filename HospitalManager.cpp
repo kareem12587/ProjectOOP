@@ -150,8 +150,10 @@ Doctor* HospitalManager::findDoctor(string doctorId)
 }
 
 // Display All Doctors
-void HospitalManager::displayAllDoctors() const {
-    if (doctors.empty()) {
+void HospitalManager::displayAllDoctors() const 
+{
+    if (doctors.empty()) 
+    {
         cout << "No doctors found!" << endl;
         return;
     }

@@ -9,7 +9,8 @@ void doctorMenu(HospitalManager& manager);
 void appointmentMenu(HospitalManager& manager);
 void showSubMenu(const string& title, const vector<string>& options);
 
-int main() {
+int main() 
+{
     cout << "Welcome to the Hospital Management System" << endl;
 
     HospitalManager manager;
@@ -58,7 +59,8 @@ int main() {
     return 0;
 }
 
-void patientMenu(HospitalManager& manager) {
+void patientMenu(HospitalManager& manager) 
+{
     vector<string> options = {
         "1. Add new patient",
         "2. View all patients",
@@ -129,7 +131,8 @@ void patientMenu(HospitalManager& manager) {
     } while (choice != 0);
 }
 
-void doctorMenu(HospitalManager& manager) {
+void doctorMenu(HospitalManager& manager) 
+{
     vector<string> options = {
         "1. Add new doctor",
         "2. View all doctors",
@@ -198,7 +201,8 @@ void doctorMenu(HospitalManager& manager) {
     } while (choice != 0);
 }
 
-void appointmentMenu(HospitalManager& manager) {
+void appointmentMenu(HospitalManager& manager) 
+{
     vector<string> options = {
         "1. Book new appointment",
         "2. View all appointments",
@@ -274,7 +278,8 @@ void appointmentMenu(HospitalManager& manager) {
     } while (choice != 0);
 }
 
-void showSubMenu(const string& title, const vector<string>& options) {
+void showSubMenu(const string& title, const vector<string>& options) 
+{
     cout << "\n=============== " << title << " ==============" << endl;
     for (size_t i = 0; i < options.size(); i++) {
         cout << options[i] << endl;

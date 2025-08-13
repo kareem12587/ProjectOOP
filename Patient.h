@@ -6,7 +6,8 @@
 #include <iostream>
 using namespace std;
 
-class Patient {
+class Patient 
+{
 private:
     string patientId;
     string name;

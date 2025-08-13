@@ -2,8 +2,9 @@
 #include "Doctor.h"
 #include <sstream>
 
-// Default Constructor
-Doctor::Doctor() {
+
+Doctor::Doctor() 
+{
     doctorId = "";
     name = "";
     specialization = "";
@@ -14,7 +15,8 @@ Doctor::Doctor() {
 }
 
 // Parameterized Constructor
-Doctor::Doctor(string id, string n, string spec, string ph, string em, string sched) {
+Doctor::Doctor(string id, string n, string spec, string ph, string em, string sched) 
+{
     doctorId = id;
     name = n;
     specialization = spec;
@@ -88,10 +90,12 @@ string Doctor::toFileFormat() const
 }
 
 // Create from file format
-void Doctor::fromFileFormat(string line) {
+void Doctor::fromFileFormat(string line) 
+{
     stringstream ss(line);
     string item;
     int count = 0;
+    
 
     while (getline(ss, item, '|'))
     {

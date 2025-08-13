@@ -6,7 +6,8 @@
 #include <iostream>
 using namespace std;
 
-class Doctor {
+class Doctor 
+{
 private:
     string doctorId;
     string name;
@@ -21,7 +22,7 @@ public:
     Doctor();
     Doctor(string id, string n, string spec, string ph, string em, string sched = "");
 
-    // Setters
+    // Sett
     void setDoctorId(string id);
     void setName(string n);
     void setSpecialization(string spec);
@@ -30,7 +31,7 @@ public:
     void setSchedule(string sched);
     void setPatientsCount(int count);
 
-    // Getters
+    // Gett
     string getDoctorId() const;
     string getName() const;
     string getSpecialization() const;

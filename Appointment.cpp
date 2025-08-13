@@ -2,8 +2,9 @@
 #include "Appointment.h"
 #include <sstream>
 
-// Default Constructor
-Appointment::Appointment() {
+
+Appointment::Appointment() 
+{
     appointmentId = "";
     patientId = "";
     doctorId = "";
@@ -22,8 +23,10 @@ Appointment::Appointment(string appId, string patId, string docId, string appoin
     status = appointmentStatus;
 }
 
-// Display appointment details
-void Appointment::displayAppointment() const {
+// Display appointment 
+void Appointment::displayAppointment() const 
+{
+
     cout << "===========================================" << endl;
     cout << "Appointment Details:" << endl;
     cout << "===========================================" << endl;
@@ -36,17 +39,17 @@ void Appointment::displayAppointment() const {
     cout << "===========================================" << endl;
 }
 
-// Display appointment info (alias for displayAppointment)
+// Display appointment 
 void Appointment::displayAppointmentInfo() const {
     displayAppointment();
 }
 
-// Convert appointment to string for file operations
+// Convert appointment to string 
 string Appointment::toString() const {
     return appointmentId + "," + patientId + "," + doctorId + "," + date + "," + time + "," + status;
 }
 
-// Convert to file format (same as toString but with | separator)
+// Convert to file format 
 string Appointment::toFileFormat() const {
     return appointmentId + "|" + patientId + "|" + doctorId + "|" + date + "|" + time + "|" + status;
 }
@@ -71,6 +74,4 @@ void Appointment::fromFileFormat(string line) {
 }
 
 // Destructor
-Appointment::~Appointment() {
-    // Nothing specific to clean up for now
-}
+Appointment::~Appointment() {}

@@ -6,14 +6,15 @@
 #include <iostream>
 using namespace std;
 
-class Appointment {
+class Appointment 
+{
 private:
     string appointmentId;
     string patientId;
     string doctorId;
     string date;
     string time;
-    string status; // "Booked", "Completed", "Cancelled"
+    string status; 
 
 public:
     // Constructor
@@ -39,13 +40,14 @@ public:
     // Methods
     void updateStatus(string newStatus) { status = newStatus; }
     void displayAppointment() const;
-    void displayAppointmentInfo() const;  // Added this method
+    void displayAppointmentInfo() const;  
     string toString() const;
-    string toFileFormat() const;          // Added this method
-    void fromFileFormat(string line);     // Added this method
+    string toFileFormat() const;          
+    void fromFileFormat(string line);     
 
     // Destructor
     ~Appointment();
+    
 };
 
 #endif
